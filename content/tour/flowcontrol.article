@@ -91,8 +91,7 @@ dê a ela uma sintaxe de ponto flutuante ou use uma conversão:
 	z: = 1.0
 	z: = float64 (1)
 
-Em seguida, altere a condição de loop para parar quando o valor for interrompido
-mudando (ou apenas muda em uma quantidade muito pequena).
+Em seguida, altere a condição de loop para parar quando o valor não mudar mais (ou apenas muda em uma quantidade muito pequena).
 Veja se isso é mais ou menos de 10 iterações.
 Tente outras estimativas iniciais para z, como x ou x/2.
 Quão perto estão os resultados da sua função para o [[https://golang.org/pkg/math/#Sqrt][math.Sqrt]] da biblioteca padrão?
@@ -130,9 +129,9 @@ Switch cases avaliam casos de cima para baixo, parando quando um caso for bem-su
 	case f():
 	}
 
-não chamar `f` se `i==0`.)
+não chama `f` se `i==0`.)
 
-#appengine: *Nota:* A data e hora no playground Go sempre aparece para começar às
+#appengine: *Nota:* A data e hora no playground Go sempre começa às 
 #appengine: 2009-11-10 23:00:00 UTC, um valor cujo significado é deixado como um
 #appengine: exercício para o leitor.
 
